@@ -1,0 +1,122 @@
+/* تنسيقات أساسية للموقع بالكامل */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* خلفية رمادية فاتحة */
+    color: #333; /* لون النص الأساسي */
+    direction: rtl; /* لجعل النص من اليمين إلى اليسار (للعربية) */
+    text-align: right; /* محاذاة النص لليمين */
+}
+
+.container {
+    width: 90%;
+    max-width: 900px; /* تحديد أقصى عرض للمحتوى */
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* تنسيقات رأس الصفحة (Header) */
+.main-header {
+    background-color: #007bff; /* لون أزرق جذاب */
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.site-title {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.tagline {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+/* تنسيقات الأقسام */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    color: #007bff;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+/* تنسيقات صورة الملف الشخصي */
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* لجعلها دائرية */
+    object-fit: cover;
+    display: block;
+    margin: 0 0 20px auto; /* محاذاة الصورة لليسار وتأمين المسافة */
+    border: 4px solid #007bff;
+}
+
+/* تنسيقات الروابط الاجتماعية */
+.social-links {
+    display: flex;
+    flex-wrap: wrap; /* للسماح للروابط بالنزول لسطر جديد على الشاشات الصغيرة */
+    gap: 15px; /* مسافة بين الروابط */
+    justify-content: flex-end; /* محاذاة الروابط لليمين */
+}
+
+.social-link {
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    text-align: center;
+}
+
+.instagram {
+    background-color: #e4405f; /* لون انستغرام */
+}
+
+.twitter {
+    background-color: #1da1f2; /* لون تويتر */
+}
+
+.email {
+    background-color: #333; /* لون للبريد الإلكتروني */
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+/* تنسيقات تذييل الصفحة (Footer) */
+.site-footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* تنسيقات للاستجابة (شاشات صغيرة) */
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 2em;
+    }
+    .profile-photo {
+        margin-left: auto;
+        margin-right: auto; /* لتوسيط الصورة في الشاشات الصغيرة */
+    }
+    .social-links {
+        justify-content: center; /* توسيط الروابط في الشاشات الصغيرة */
+    }
+  }
